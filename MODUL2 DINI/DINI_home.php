@@ -16,7 +16,7 @@
             <tr><img src="hrv.png" width="250" height="150"></tr>
         </th>
         <th> 
-            <tr><img src="innova_baru.png" width="300" height="150"></tr>
+            <tr><img src="innova_baru.png"></tr>
         </th>
     </table>
 </body>

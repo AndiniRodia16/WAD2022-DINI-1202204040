@@ -9,9 +9,9 @@
 </head>
 <body>
 <?php
-    $name = isset($_GET['name']) ? $_GET['name'] : '';
-    $date = isset($_GET['date']) ? $_GET['date'] : '';
-    $mulai = isset($_GET['mulai']) ? $_GET['mulai'] : '';
+    $nama = isset($_GET['name']) ? $_GET['name'] : '';
+    $dates = isset($_GET['date']) ? $_GET['date'] : '';
+    $start = isset($_GET['mulai']) ? $_GET['mulai'] : '';
     $durasi = isset($_GET['durasi']) ? $_GET['durasi'] : '';
     $mobil = isset($_GET['mobil']) ? $_GET['mobil'] : '';
     $nohp = isset($_GET['nohp']) ? $_GET['nohp'] : '';

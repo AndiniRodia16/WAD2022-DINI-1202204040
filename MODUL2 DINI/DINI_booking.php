@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1 class="text center"> YUUUK RENTAL SEKARANG YUUUK! </h1>
-        <form action="DINI_mybooking.php" method="GET">
+        <form action="DINI_home.php" method="GET">
             <div class="nb-3">
                 <label for="name" class="form tabel"> Nama </label>
                 <input type="text" class="form-control" id="name" name="name" placeholde="NAMA_NIM">
