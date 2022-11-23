@@ -43,19 +43,19 @@
                 <form action="config/edit2.php" method="POST" enctype="multipart/form-data">
                     <input name="id_mobil" value="<?php echo $data['id_mobil'];?>" hidden/>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label"> Nama Mobil</label>
+                        <label for="exampleInputNama1" class="form-label"> Nama Mobil</label>
                         <input type="text" name="nama" class="form-control" value="<?php echo $data['nama_mobil']?>">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label"> Nama Pemilik </label>
+                        <label for="exampleInputNama2" class="form-label"> Nama Pemilik </label>
                         <input type="text" name="pemilik" class="form-control" value="<?php echo $data['pemilik_mobil']?>">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label"> Merk </label>
+                        <label for="exampleInput" class="form-label"> Merk </label>
                         <input type="text" name="merk" class="form-control" value="<?php echo $data['merk_mobil']?>">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label"> Tanggal Beli </label>
+                        <label for="exampleInputPass" class="form-label"> Tanggal Beli </label>
                         <input type="date" name="tanggal" class="form-control" value="<?php echo $data['tanggal_beli']?>">
                     </div>
                     <div class="mb-3">
