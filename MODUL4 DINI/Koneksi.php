@@ -1,3 +1,10 @@
 <?php
-$koneksi = new mysqli("localhost","root","","wad_modul4_dini");
+    $dbhost = "localhost";
+    $dbuser = "root";
+    $dbpass = "";
+    $dbname = "wad_modul4_dini";
+    $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+    if(!$conn){
+        echo"<script>alert Gagal Terhubung ke Database</script>";
+    }
 ?>
