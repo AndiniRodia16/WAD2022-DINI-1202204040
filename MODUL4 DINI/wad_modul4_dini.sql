@@ -2,10 +2,17 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
+<<<<<<< HEAD
 -- Host: localhost
 -- Waktu pembuatan: 01 Des 2022 pada 23.02
 -- Versi server: 8.0.30
 -- Versi PHP: 8.1.10
+=======
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 27 Nov 2022 pada 15.22
+-- Versi server: 10.4.27-MariaDB
+-- Versi PHP: 8.1.12
+>>>>>>> 2200285c302e2c39d4a1ac1cff6fb8864eae0294
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,6 +35,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `showroom_dini_table` (
+<<<<<<< HEAD
   `id_mobil` int NOT NULL,
   `nama_mobil` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
   `pemilik_mobil` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
@@ -47,6 +55,18 @@ INSERT INTO `showroom_dini_table` (`id_mobil`, `nama_mobil`, `pemilik_mobil`, `m
 (19, 'BMW Z4', 'Revan', 'BMW', '2025-04-02', 'Luar dalam, desain BMW Z4 Roadster menyampaikan perasaan sporty yang santai dan estetika individu. Fitur canggih dari tampilan dinamis termasuk BMW kidney grille dalam desain mesh, atap yang elegan dan elemen M Shadow Line.', 'BMW Z4-bmw-z4-roadster-gallery-image-design-01_1920.jpg', 'lunas'),
 (20, 'BMW 8 Series', 'Revan', 'BMW', '2025-02-25', 'The new BMW 8 Series Gran Coupé models BMW 840i come with the M sport package as standard. Get more sportiness with distinctive features such as: Get more athletics with distinctive features:', 'BMW 8 Series-cq5dam.resized.img.1680.large.time1642510163180.jpg', 'lunas');
 
+=======
+  `id_mobil` int(255) NOT NULL,
+  `nama_mobil` varchar(255) NOT NULL,
+  `pemilik_mobil` varchar(255) NOT NULL,
+  `merk_mobil` varchar(255) NOT NULL,
+  `tanggal_beli` date NOT NULL,
+  `deskripsi` text NOT NULL,
+  `foto_mobil` varchar(255) NOT NULL,
+  `status_pembayaran` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+>>>>>>> 2200285c302e2c39d4a1ac1cff6fb8864eae0294
 -- --------------------------------------------------------
 
 --
@@ -54,6 +74,7 @@ INSERT INTO `showroom_dini_table` (`id_mobil`, `nama_mobil`, `pemilik_mobil`, `m
 --
 
 CREATE TABLE `user_dini` (
+<<<<<<< HEAD
   `id` bigint NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
   `nama` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
@@ -104,6 +125,14 @@ ALTER TABLE `showroom_dini_table`
 --
 ALTER TABLE `user_dini`
   MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+=======
+  `id` bigint(20) NOT NULL,
+  `email` int(255) NOT NULL,
+  `nama` int(255) NOT NULL,
+  `no_hp` int(50) NOT NULL,
+  `password` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+>>>>>>> 2200285c302e2c39d4a1ac1cff6fb8864eae0294
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
